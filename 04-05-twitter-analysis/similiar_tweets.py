@@ -89,7 +89,7 @@ def tokenize_tweets(tweets):
 
     tweets = filter(only_tweets, tweets)
 
-    # lambda in map so we can pass False to preserve_case arg
+    # lambda in map so we can pass args
     tweets = list(
         map(
             lambda tw: casual.casual_tokenize(
@@ -106,7 +106,7 @@ if __name__ == "__main__":
                ('newsafaribooks', 0.149423), ('paugasol', 0.149423),
                ('Schwarzenegger', 0.149423), ('raymondh', 0.142598),
                ('github', 0.064402), ('lifehacker', 0.057078))
-    n_tweets = 200
-    score = main('bbelderbos', 'bbelderbos', n_tweets)
+    n_tweets = 1000
+    score = main('tiedyeblotter', 'petitetaint', n_tweets)
 
     print(f"sim score between {n_tweets} tweets: {score}")
