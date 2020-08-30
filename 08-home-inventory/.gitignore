@@ -1,0 +1,7 @@
+venv
+__pycache__
+.vscode
+node_modules
+.env
+bundle.js
+.VSCodeCounter
